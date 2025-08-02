@@ -1,144 +1,209 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pendaftaran IKSPI Kera Sakti Sub Ranting Bandar Lor</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #ff0000 60%, #fff 100%);
-            min-height: 100vh;
-        }
-        .logo, .logo-ipsi {
-            position: absolute;
-            top: 20px;
-            width: 80px;
-            height: 80px;
-        }
-        .logo {
-            left: 20px;
-        }
-        .logo-ipsi {
-            right: 20px;
-        }
-        .logo img, .logo-ipsi img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-        .container {
-            max-width: 400px;
-            margin: 100px auto 0 auto;
-            background: #fff;
-            border-radius: 16px;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-            padding: 32px 24px;
-            text-align: center;
-        }
-        h1 {
-            color: #d80000;
-            margin-bottom: 8px;
-        }
-        label {
-            display: block;
-            text-align: left;
-            margin: 12px 0 4px 0;
-            color: #d80000;
-            font-weight: bold;
-        }
-        input, select {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 12px;
-            border: 1px solid #d80000;
-            border-radius: 6px;
-            box-sizing: border-box;
-        }
-        button {
-            background: #d80000;
-            color: #fff;
-            border: none;
-            padding: 10px 24px;
-            border-radius: 8px;
-            font-size: 1em;
-            cursor: pointer;
-            margin-top: 8px;
-        }
-        button:hover {
-            background: #ff3333;
-        }
-        .footer {
-            margin-top: 24px;
-            color: #d80000;
-            font-size: 0.9em;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran IKSPI Kera Sakti Sub Ranting Bandar Lor</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff0000 60%, #fff 100%);
+      min-height: 100vh;
+    }
+    .logo, .logo-ipsi {
+      position: absolute;
+      top: 20px;
+      width: 80px;
+      height: 80px;
+    }
+    .logo {
+      left: 20px;
+    }
+    .logo-ipsi {
+      right: 20px;
+    }
+    .logo img, .logo-ipsi img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .container {
+      max-width: 400px;
+      margin: 100px auto 0 auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      padding: 32px 24px;
+      text-align: center;
+    }
+    h1 {
+      color: #d80000;
+      margin-bottom: 8px;
+    }
+    label {
+      display: block;
+      text-align: left;
+      margin: 12px 0 4px 0;
+      color: #d80000;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+      border: 1px solid #d80000;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+    button {
+      background: #d80000;
+      color: #fff;
+      border: none;
+      padding: 10px 24px;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-top: 8px;
+    }
+    button:hover {
+      background: #ff3333;
+    }
+    .footer {
+      margin-top: 24px;
+      color: #d80000;
+      font-size: 0.9em;
+    }
 
-        /* Responsive layout for mobile */
-        @media screen and (max-width: 600px) {
-            .container {
-                margin: 60px 16px;
-                padding: 24px 16px;
-                max-width: 100%;
-            }
-            .logo, .logo-ipsi {
-                width: 60px;
-                height: 60px;
-                top: 10px;
-            }
-            h1 {
-                font-size: 1.4em;
-            }
-            .footer {
-                font-size: 0.8em;
-            }
-        }
-    </style>
+    /* Informasi tambahan */
+    .info-section {
+      max-width: 800px;
+      margin: 40px auto;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      padding: 32px;
+      text-align: left;
+      color: #333;
+      line-height: 1.6;
+    }
+    .info-section h2 {
+      color: #d80000;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .info-section ul {
+      padding-left: 20px;
+    }
+    .info-highlight {
+      background: #d80000;
+      color: #fff;
+      padding: 12px;
+      border-radius: 8px;
+      margin: 16px 0;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    /* Responsive layout for mobile */
+    @media screen and (max-width: 600px) {
+      .container {
+        margin: 60px 16px;
+        padding: 24px 16px;
+        max-width: 100%;
+      }
+      .logo, .logo-ipsi {
+        width: 60px;
+        height: 60px;
+        top: 10px;
+      }
+      h1 {
+        font-size: 1.4em;
+      }
+      .info-section {
+        margin: 24px 16px;
+        padding: 24px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <!-- Logo IKSPI Kera Sakti -->
-    <div class="logo">
-        <img src="image/logo-ikspi.png" alt="Logo IKSPI Kera Sakti">
+  <!-- Logo IKSPI Kera Sakti -->
+  <div class="logo">
+    <img src="image/logo-ikspi.png" alt="Logo IKSPI Kera Sakti">
+  </div>
+  <!-- Logo IPSI -->
+  <div class="logo-ipsi">
+    <img src="image/logo-ipsi.png" alt="Logo IPSI">
+  </div>
+
+  <!-- Form Pendaftaran -->
+  <div class="container">
+    <h1>Pendaftaran</h1>
+    <div style="font-size:1.3em; color:#d80000; font-weight:bold; margin-bottom:14px;">
+      IKSPI Kera Sakti<br>Sub Ranting Bandar Lor
     </div>
-    <!-- Logo IPSI -->
-    <div class="logo-ipsi">
-        <img src="image/logo-ipsi.png" alt="Logo IPSI">
+    <form action="https://formspree.io/f/xdkdlklb" method="POST">
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="umur">Umur</label>
+      <input type="number" id="umur" name="umur" min="10" max="60" required>
+
+      <label for="alamat">Alamat</label>
+      <input type="text" id="alamat" name="alamat" required>
+
+      <label for="telepon">Nomor Telepon</label>
+      <input type="tel" id="telepon" name="telepon" required pattern="[0-9]{10,15}">
+
+      <label for="jk">Jenis Kelamin</label>
+      <select id="jk" name="jk" required>
+        <option value="">Pilih...</option>
+        <option value="Laki-laki">Laki-laki</option>
+        <option value="Perempuan">Perempuan</option>
+      </select>
+
+      <input type="hidden" name="_subject" value="Pendaftaran Baru IKSPI">
+      <input type="hidden" name="_cc" value="giringoctavio123@gmail.com">
+
+      <button type="submit">Daftar</button>
+    </form>
+    <div class="footer">
+      &copy; 2025 IKSPI Kera Sakti Sub Ranting Bandar Lor
     </div>
-    <div class="container">
-        <h1 style="margin-bottom:8px;">Pendaftaran</h1>
-        <div style="font-size:1.3em; color:#d80000; font-weight:bold; margin-bottom:14px;">
-            IKSPI Kera Sakti<br>Sub Ranting Bandar Lor
-        </div>
-        <form action="https://formspree.io/f/xdkdlklb" method="POST">
-            <label for="nama">Nama Lengkap</label>
-            <input type="text" id="nama" name="nama" required>
+  </div>
 
-            <label for="umur">Umur</label>
-            <input type="number" id="umur" name="umur" min="10" max="60" required>
+  <!-- Informasi Tambahan -->
+  <div class="info-section">
+    <h2>🌟 Informasi Latihan & Nilai-nilai Perguruan 🌟</h2>
 
-            <label for="alamat">Alamat</label>
-            <input type="text" id="alamat" name="alamat" required>
+    <div class="info-highlight">🕒 Jadwal Latihan</div>
+    <ul>
+      <li><strong>Hari:</strong> Senin & Rabu</li>
+      <li><strong>Waktu:</strong> Pukul 18.00 WIB sampai selesai</li>
+      <li><strong>Tempat:</strong> Lapangan Golusia, Perum Candra Kirana</li>
+    </ul>
 
-            <label for="telepon">Nomor Telepon</label>
-            <input type="tel" id="telepon" name="telepon" required pattern="[0-9]{10,15}">
+    <div class="info-highlight">🥋 Materi yang Diajarkan</div>
+    <ul>
+      <li>Seni Beladiri & Kungfu IKSPI Kera Sakti</li>
+      <li>Pembinaan Kerohanian dan Mental</li>
+      <li>Disiplin, Sopan Santun, dan Etika Perguruan</li>
+      <li>Pemahaman Arti Kebersamaan & Kekeluargaan</li>
+      <li>Pengembangan Bakat dan Pembinaan Atlit</li>
+    </ul>
 
-            <label for="jk">Jenis Kelamin</label>
-            <select id="jk" name="jk" required>
-                <option value="">Pilih...</option>
-                <option value="Laki-laki">Laki-laki</option>
-                <option value="Perempuan">Perempuan</option>
-            </select>
+    <div class="info-highlight">📌 Persyaratan Pendaftaran</div>
+    <ul>
+      <li>Niat yang sungguh-sungguh untuk belajar</li>
+      <li>Mendapatkan izin dari orang tua/wali</li>
+      <li>Siap menjalankan peraturan yang berlaku di perguruan</li>
+    </ul>
 
-            <input type="hidden" name="_subject" value="Pendaftaran Baru IKSPI">
-            <input type="hidden" name="_cc" value="giringoctavio123@gmail.com">
-
-            <button type="submit">Daftar</button>
-        </form>
-        <div class="footer">
-            &copy; 2025 IKSPI Kera Sakti Sub Ranting Bandar Lor
-        </div>
-    </div>
+    <p style="text-align:center; margin-top:24px; font-weight:bold;">
+      Bergabunglah bersama kami dan jadilah bagian dari keluarga besar IKSPI Kera Sakti! 💥<br>
+      Latihan, Persaudaraan, dan Prestasi menantimu! 🐒🔥
+    </p>
+  </div>
 </body>
 </html>
-
