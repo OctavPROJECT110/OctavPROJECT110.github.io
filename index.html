@@ -2,6 +2,7 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pendaftaran IKSPI Kera Sakti Sub Ranting Bandar Lor</title>
     <style>
         body {
@@ -53,6 +54,7 @@
             margin-bottom: 12px;
             border: 1px solid #d80000;
             border-radius: 6px;
+            box-sizing: border-box;
         }
         button {
             background: #d80000;
@@ -71,6 +73,26 @@
             margin-top: 24px;
             color: #d80000;
             font-size: 0.9em;
+        }
+
+        /* Responsive layout for mobile */
+        @media screen and (max-width: 600px) {
+            .container {
+                margin: 60px 16px;
+                padding: 24px 16px;
+                max-width: 100%;
+            }
+            .logo, .logo-ipsi {
+                width: 60px;
+                height: 60px;
+                top: 10px;
+            }
+            h1 {
+                font-size: 1.4em;
+            }
+            .footer {
+                font-size: 0.8em;
+            }
         }
     </style>
 </head>
@@ -100,6 +122,7 @@
 
             <label for="telepon">Nomor Telepon</label>
             <input type="tel" id="telepon" name="telepon" required pattern="[0-9]{10,15}">
+
             <label for="jk">Jenis Kelamin</label>
             <select id="jk" name="jk" required>
                 <option value="">Pilih...</option>
@@ -116,3 +139,6 @@
             &copy; 2025 IKSPI Kera Sakti Sub Ranting Bandar Lor
         </div>
     </div>
+</body>
+</html>
+
